@@ -22,7 +22,7 @@ public class CarBuilder {
                 .collect(Collectors.toList());
 
         brandAndModels = Stream.of(
-                        new AbstractMap.SimpleEntry<>("tesla", Arrays.asList("X", "S", "3", "Y")),
+                        new AbstractMap.SimpleEntry<>("audi", Arrays.asList("TT", "Q5", "Q6", "GT")),
                         new AbstractMap.SimpleEntry<>("porsche", Arrays.asList("cayenne", "taycan", "panamera")),
                         new AbstractMap.SimpleEntry<>("bmw", Arrays.asList("x3", "x5", "x6")),
                         new AbstractMap.SimpleEntry<>("mercedes", Arrays.asList("AMG SL", "AMG GT", "G-Class")))
