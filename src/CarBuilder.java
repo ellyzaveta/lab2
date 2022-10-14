@@ -29,7 +29,7 @@ public class CarBuilder {
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
     }
 
-    public String randMark() {
+    public String randBrand() {
         List<String> brands = brandAndModels.keySet().stream().toList();
         brand = brands.get(random.nextInt(brands.size()));
         return brand;
@@ -58,7 +58,7 @@ public class CarBuilder {
     }
 
     public Car getRandSingleCar() {
-        return new Car(++id, randMark(), randModel(), randReleaseYear(), randColor(), randPrice(), randRegistrationNumber());
+        return new Car(++id, randBrand(), randModel(), randReleaseYear(), randColor(), randPrice(), randRegistrationNumber());
     }
     
     public List<Car> getArrOfRandCars(int numOfCars) {

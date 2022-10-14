@@ -4,7 +4,7 @@
 * а кількість коду в рази зменшується. */
 
 public record Car(int id,
-                  String mark,
+                  String brand,
                   String model,
                   Integer releaseYear,
                   String color,
@@ -18,6 +18,6 @@ public record Car(int id,
     public String toString() {
         return String.format("""
             Car %d: %s %s, %d, %s, %f $, rn: %s
-            """, id, mark, model, releaseYear, color, price, registrationNumber );
+            """, id, brand, model, releaseYear, color, price, registrationNumber );
     }
 }

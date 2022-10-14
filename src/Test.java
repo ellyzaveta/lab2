@@ -10,7 +10,7 @@ public class Test {
         List<Car> cars = carBuilder.getArrOfRandCars(numOfCars);
 
 
-        String brand = carBuilder.randMark();
+        String brand = carBuilder.randBrand();
         String model = carBuilder.randModel();
         int years = rm.nextInt(1, 10);
         Integer year = carBuilder.randReleaseYear();

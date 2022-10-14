@@ -8,9 +8,9 @@ import java.util.stream.Collectors;
 * (можемо застосовувати на багатьох різних списках машин) */
 
 public class Manager {
-    public static List<Car> listOfCarsByBrand(List<Car> cars, String mark) {
+    public static List<Car> listOfCarsByBrand(List<Car> cars, String brand) {
         return cars.stream()
-                .filter(car -> car.mark().equals(mark))
+                .filter(car -> car.brand().equals(brand))
                 .collect(Collectors.toList());
     }
 
